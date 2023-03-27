@@ -1,11 +1,11 @@
-About pydeps
-============
+About pydeps-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydeps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/thebjorn/pydeps
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydeps-feedstock/blob/main/LICENSE.txt)
 
 Summary: Display module dependencies
 
