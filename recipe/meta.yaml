@@ -1,5 +1,5 @@
 {% set name = "pydeps" %}
-{% set version = "1.12.7" %}
+{% set version = "1.12.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydeps-{{ version }}.tar.gz
-  sha256: 73fd4b8657d954ac7355aad27321a79de594805a7b0e3ec15228b63f117f6132
+  sha256: 9e3064371c574177e288b17ea2ca96871e47add823c142920d3a4bd7c389a8bd
 
 build:
   noarch: python
