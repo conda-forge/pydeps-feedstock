@@ -1,5 +1,5 @@
 {% set name = "pydeps" %}
-{% set version = "2.0.1" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydeps-{{ version }}.tar.gz
-  sha256: 6f898ab683ef7c47b14c9cc86bf28b15adebc466cb343c784da4090b2573c704
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydeps-{{ version }}.tar.gz
+  sha256: a0cd1966c45b57fa560071e4249c164644a97dda735fd78aabf012dbefa8895d
 
 build:
   noarch: python
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min}}
     - stdlib-list
 
 test:
@@ -34,6 +34,7 @@ test:
     - pydeps --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/thebjorn/pydeps
