@@ -1,5 +1,5 @@
 {% set name = "pydeps" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydeps-{{ version }}.tar.gz
-  sha256: a0cd1966c45b57fa560071e4249c164644a97dda735fd78aabf012dbefa8895d
+  sha256: a57415a8fae2ff6840a199b7dfcfecb90c37e4b9b54b58a111808a3440bc03bc
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - python >={{ python_min}}
+    - python >={{ python_min }}
     - stdlib-list
 
 test:
