@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pydeps
-  version: "3.0.7"
+  version: "3.0.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pydeps-${{ version }}.tar.gz
-  sha256: 69903a434bb0b9d8ba179545159d067ac6281a63229191b3fd1327e3e6c145da
+  sha256: e54b19d22c8f94b4787bc0bbb3bbe4afc074e32ff9e7868d7750340faec9f8ec
 
 build:
   number: 0
